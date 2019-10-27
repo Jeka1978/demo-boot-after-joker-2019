@@ -25,5 +25,10 @@ public class HelloController {
         return null;
     }
 
+    @GetMapping("/p")
+    public Person person(){
+        return  Person.builder().age(12).build();
+    }
+
 
 }
